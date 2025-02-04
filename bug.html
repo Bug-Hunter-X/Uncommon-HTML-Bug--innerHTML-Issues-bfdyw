@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrect way to add content dynamically
+    document.getElementById("myDiv").innerHTML += "<p>This is a new paragraph.</p>";
+
+    // Another common mistake, not using textContent
+    document.getElementById("myDiv").innerHTML = "<p>Another paragraph.</p>";
+  </script>
+</body>
+</html>
